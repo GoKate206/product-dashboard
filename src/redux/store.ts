@@ -4,7 +4,7 @@ import productReducer from "./actions";
 const store = configureStore({
     reducer: {
         product: productReducer,
-    }
+    },
 })
 
 export type AppDispatch = typeof store.dispatch;

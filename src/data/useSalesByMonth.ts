@@ -31,8 +31,7 @@ export const useSalesByMonth = ({ data }: useSalesByMonthProps) => {
 
         }, {});
 
-        const test = Object.keys(formatted).map((month) => ({ month, ...formatted[month]}));
-        return test;
+        return Object.keys(formatted).map((month) => ({ month, ...formatted[month]}));
     }, [data]);
 }
 

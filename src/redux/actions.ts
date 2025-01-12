@@ -17,8 +17,8 @@ const initialState: ProductState = {
 export const fetchProduct = createAsyncThunk('product/fetchProduct', async () => {
     return new Promise<Product>((resolve) => {
         setTimeout(() => {
-            resolve(mockData[0])
-        }, 500)
+            resolve(mockData[0]);
+        }, 500);
     })
 })
 
@@ -54,8 +54,8 @@ export const productSlice = createSlice({
         .addCase(fetchProduct.rejected, (state, action) => {
             state.loading = false;
             state.error = action.error ?? 'Failed to fetch Product';
-        })
-    }
+        });
+    },
 })
 
 export const { fetchProductRequest, fetchProductSuccess, fetchProductError } = productSlice.actions;
