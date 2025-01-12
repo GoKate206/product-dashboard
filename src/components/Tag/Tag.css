@@ -1,0 +1,7 @@
+.tagLabel {
+    font-size: 12px;
+    margin: 4px;
+    padding: 4px 8px;
+    border: solid 1px var(--border);
+    border-radius: 4px;
+}

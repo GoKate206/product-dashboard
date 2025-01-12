@@ -20,7 +20,15 @@ export interface Review {
 export interface Sale {
     weekEnding: string; // Date in YYYY-MM-DD format
     retailSales: number;
+    wholesaleSales: number;
     unitsSold: number;
     retailerMargin: number;
 }
 
+export interface MonthlySales {
+    month: string;
+    retailSales: number;
+    wholesaleSales: number;
+    unitsSold: number;
+    retailerMargin: number;
+}

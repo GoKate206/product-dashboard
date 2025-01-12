@@ -1,0 +1,10 @@
+.spendChartContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+    border: solid 1px var(--border);
+}
