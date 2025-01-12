@@ -1,0 +1,12 @@
+.header {
+    background-color: var(--header-color);
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+
+    .logo {
+        width: 108px;
+        padding: 20px;
+    }
+}
